@@ -502,7 +502,11 @@ wget.callbacks.write_to_warc = function(url, http_stat)
   if http_stat["statcode"] ~= 200
     and http_stat["statcode"] ~= 404
     and http_stat["statcode"] ~= 303
-    and http_stat["statcode"] ~= 415 then
+    and http_stat["statcode"] ~= 415
+    and (
+      http_stat["statcode"] ~= 302
+      or not string.match(url["url"], "^https?://[^/]*biusante%.parisdescartes%.fr/")
+    ) then
     retry_url = true
     return false
   end
