@@ -76,7 +76,7 @@ if not WGET_AT:
 #
 # Update this each time you make a non-cosmetic change.
 # It will be added to the WARC files and reported to the tracker.
-VERSION = '20260327.01'
+VERSION = '20260520.01'
 USER_AGENT = 'Mozilla/5.0 (X11; Linux i686; rv:124.0) Gecko/20100101 Firefox/124.0'
 TRACKER_ID = 'medica'
 TRACKER_HOST = 'legacy-api.arpa.li'
@@ -288,7 +288,7 @@ class WgetArgs(object):
 project = Project(
     title=TRACKER_ID,
     project_html='''
-        <img class="project-logo" alt="Project logo" src="" height="50px" title="https://wiki.archiveteam.org/images/thumb/f/f3/Archive_team.png/235px-Archive_team.png"/>
+        <img class="project-logo" alt="Project logo" src="" height="50px" title="https://wiki.archiveteam.org/images/thumb/7/77/ArchiveTeamWarriorLogo.png/235px-ArchiveTeamWarriorLogo.png"/>
         <h2>Medica Bibliothèque Numérique <span class="links"><a href="https://numerabilis.u-paris.fr/medica/bibliotheque-numerique/">Website</a> &middot; <a href="http://tracker.archiveteam.org/medica/">Leaderboard</a> &middot; <a href="https://wiki.archiveteam.org/index.php/Medica Bibliothèque Numérique">Wiki</a></span></h2>
         <p>Archiving Medica Bibliothèque Numérique.</p>
     '''
